@@ -1,11 +1,11 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyDyy4CKSEnZM2BBfjUQDEIUsAG6YzBQOko",
-  authDomain: "dark-nets4.firebaseapp.com",
-  projectId: "dark-nets4",
-  storageBucket: "dark-nets4.firebasestorage.app",
-  messagingSenderId: "564381623124",
-  appId: "1:564381623124:web:14e1a6779719b1f30edec1",
-  measurementId: "G-YVLCKW3G24"
+  apiKey: "AIzaSyAYY5RbVDqsBWrGWtK6ExXPqXjGp5cWqvs",
+  authDomain: "dark-nets3.firebaseapp.com",
+  projectId: "dark-nets3",
+  storageBucket: "dark-nets3.firebasestorage.app",
+  messagingSenderId: "823307936035",
+  appId: "1:823307936035:web:a0352460278d49adb6ac96",
+  measurementId: "G-YE4EBL1FWV"
 };
 firebase.initializeApp(firebaseConfig);
 var theWebsite = 'https://www.dark-nets.com/checkout';
@@ -112,11 +112,11 @@ function showNotification() {
 			setTimeout(() => { document.getElementsByClassName('toast')[0].classList.add(`anon`); }, 200);	
 			var shortCutFunction = 'success'; var msg = `Use a burner email, <br> to complete the purchase. <hr class="to-hr hr15-top">`;
 			toastr.options =  { closeButton: true, debug: false, newestOnTop: true, timeOut: 3000,progressBar: true,positionClass: 'toast-top-full-width', preventDuplicates: true, onclick: null }; var $toast = toastr[shortCutFunction](msg); $toastlast = $toast;
-		}, 3000);
+		}, 2000);
 
 		if(window.innerWidth < 700) {
 			setTimeout(() => {
-				$("html, body").animate({ scrollTop: 630 }, 5000); 
+				$("html, body").animate({ scrollTop: 630 }, 4500); 
 			}, 3000);
 		}
 
