@@ -113,9 +113,7 @@ function showNotification() {
 			toastr.options =  { closeButton: true, debug: false, newestOnTop: true, timeOut: 3000,progressBar: true,positionClass: 'toast-top-full-width', preventDuplicates: true, onclick: null }; var $toast = toastr[shortCutFunction](msg); $toastlast = $toast;
 
 			if(window.innerWidth < 700) {
-				setTimeout(() => {
-					$("html, body").animate({ scrollTop: 630 }, 3000); 
-				}, 600);
+				$("html, body").animate({ scrollTop: 630 }, 3600); 
 			}
 		}, 2000);
 	});
