@@ -111,13 +111,11 @@ function showNotification() {
 			setTimeout(() => { document.getElementsByClassName('toast')[0].classList.add(`anon`); }, 200);	
 			var shortCutFunction = 'success'; var msg = `Use a burner email, <br> to complete the purchase. <hr class="to-hr hr15-top">`;
 			toastr.options =  { closeButton: true, debug: false, newestOnTop: true, timeOut: 3000,progressBar: true,positionClass: 'toast-top-full-width', preventDuplicates: true, onclick: null }; var $toast = toastr[shortCutFunction](msg); $toastlast = $toast;
-		
+			
 			if(window.innerWidth < 700) {
-				// setTimeout(() => {
-					$("html, body").animate({ scrollTop: 630 }, 4000); 
-				// }, 1000);
+				$("html, body").animate({ scrollTop: 630 }, 4000); 
 			}
-		}, 3000);
+		}, 2000);
 	});
 }
 
