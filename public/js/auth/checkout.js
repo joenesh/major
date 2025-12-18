@@ -96,7 +96,7 @@ function emailShow() {
 			mailField.classList.add('sm-display-none'); 
 			mailField.setAttribute('readOnly', true);
 		} else {
-			// setTimeout(() => { showNotification(); }, 2000);
+			setTimeout(() => { showNotification(); }, 2000);
 			if(window.innerWidth < 700) {
 				showToasts.innerHTML = `<i class="fas fa-check"></i>`;
 			} 
