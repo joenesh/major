@@ -1,0 +1,131 @@
+
+#loginField {
+  color:  rgba(18, 29, 51, 0.9) !important;
+  border: 2px solid rgb(55, 138, 156, 0.9) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9) !important;
+
+  height: 73px !important;
+  width: 340px !important;
+
+  border-radius: 0.5px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+
+  padding: 0 15px !important;
+  margin: 20px auto !important;
+
+  font-size: 25px !important;
+  letter-spacing: 1.4px !important;
+  align-items: center !important;
+}
+
+#showtoasts {
+  height: 72px !important;
+  text-transform: capitalize !important;
+  font-size: 30px !important;
+  padding: 17px 15px !important;
+  letter-spacing: 1.5px !important;
+  font-weight: 700 !important;
+  float: right !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  margin: 22px 40px !important;
+
+  border: 2px solid rgb(18, 29, 51, 1) !important;
+  box-shadow: 0 0 0 1.7px rgba(255, 255, 255, 0.8) !important;
+
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: Floating7;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+@media screen and (max-width: 567px) {
+  #loginField {
+    height: 72px !important;
+    width: 98% !important;
+    font-size: 24px !important;
+    letter-spacing: 1.2px !important;
+    margin: 20px 14px 22px 10px !important;
+  }
+
+  #showtoasts {
+    height: 72px !important;
+    font-size: 29px !important;
+    padding: 18px 18px 0px 14px !important;
+    margin: 20px 10px 22px 14px !important;
+  }  
+}
+
+@media screen and (max-width: 420px) {
+  #loginField {
+    height: 71px !important;
+    width: 98% !important;
+    font-size: 23.5px !important;
+    margin: 20px 13px 22px 9px !important;
+  }
+
+  #showtoasts {
+    height: 71px !important;
+    font-size: 28px !important;
+    padding: 18px 18px 0px 14px !important;
+    margin: 20px 9px 22px 13px !important;
+  }  
+}
+
+@media screen and (max-width: 400px) {
+  #loginField {
+    height: 70px !important;
+    width: 98% !important;
+    font-size: 23px !important;
+    margin: 20px 12px 22px 8px !important;
+  }
+
+  #showtoasts {
+    height: 70px !important;
+    font-size: 27px !important;
+    padding: 18px 18px 0px 14px !important;
+    margin: 20px 8px 22px 12px !important;
+  }  
+}
+
+#showtoasts.add-left {
+  margin-right: 20px !important;
+}
+
+
+
+#invoice-footer {
+  display: flex !important;
+}
+#invoice-footer.display-none {
+  display: none !important;
+}
+
+
+
+
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_length {
+  opacity: 0.9 !important;
+}
+
+
+.nohr {
+  border: 1.5px solid rgba(73, 192, 208, 0.5);
+  width: 100% !important;
+  margin: 10px 0% 20px !important;
+  border-radius: 5px !important;
+}
+
+
+@media screen and (max-width: 560px) {
+  .nohr {
+    border: 1.5px solid rgba(73, 192, 208, 0.5);
+    width: 97% !important;
+    margin: 5px 0% 20px 3% !important;
+    border-radius: 5px !important;
+  }
+}
