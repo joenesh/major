@@ -115,7 +115,7 @@ function showNotification() {
 
 		if(window.innerWidth < 700) {
 			setTimeout(() => {
-				$("html, body").animate({ scrollTop: 620 }, 4500); 
+				$("html, body").animate({ scrollTop: 630 }, 4500); 
 			}, 3000);
 		}
 	});
