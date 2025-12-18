@@ -129,10 +129,10 @@ if(localStorage.getItem('banklogs')){
         thetotS.addEventListener('click', ()=> { modems.click(); });
         theLogs.addEventListener('click', ()=> { modems.click(); });
     } else {
-        setTimeout(() => { emptyCart(); }, 1000);
+        setTimeout(() => { emptyCart(); }, 2000);
     }
 } else {
-    setTimeout(() => { emptyCart(); }, 1000);
+    setTimeout(() => { emptyCart(); }, 2000);
 }
 
 function emptyCart() {
