@@ -115,7 +115,7 @@ function showNotification() {
 
 		if(window.innerWidth < 700) {
 			setTimeout(() => {
-				$("html, body").animate({ scrollTop: 630 }, 4500); 
+				$("html, body").animate({ scrollTop: 630 }, 5000); 
 			}, 3000);
 		}
 	});
@@ -274,7 +274,7 @@ const checkoutFunction = () => {
 
 		setTimeout(() => {
 			setTimeout(() => { pdfFunction(); }, 1000);
-		}, 4500);
+		}, 5000);
 	});
 }
 moneButn.addEventListener('click', checkoutFunction);
