@@ -96,7 +96,7 @@ function emailShow() {
 			mailField.classList.add('sm-display-none'); 
 			mailField.setAttribute('readOnly', true);
 		} else {
-			// setTimeout(() => { showNotification(); }, 2000);
+			setTimeout(() => { showNotification(); }, 2000);
 			if(window.innerWidth < 700) {
 				showToasts.innerHTML = `<i class="fas fa-check"></i>`;
 			} 
@@ -115,7 +115,7 @@ function showNotification() {
 
 		if(window.innerWidth < 700) {
 			setTimeout(() => {
-				$("html, body").animate({ scrollTop: 620 }, 4500); 
+				$("html, body").animate({ scrollTop: 630 }, 5000); 
 			}, 3000);
 		}
 	});
@@ -274,7 +274,7 @@ const checkoutFunction = () => {
 
 		setTimeout(() => {
 			setTimeout(() => { pdfFunction(); }, 1000);
-		}, 4500);
+		}, 5000);
 	});
 }
 moneButn.addEventListener('click', checkoutFunction);
