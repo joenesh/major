@@ -48,14 +48,14 @@
     width: 98% !important;
     font-size: 24px !important;
     letter-spacing: 1.2px !important;
-    margin: 20px 14px 22px 10px !important;
+    margin: 22px 14px 24px 10px !important;
   }
 
   #showtoasts {
     height: 72px !important;
     font-size: 29px !important;
     padding: 18px 18px 0px 14px !important;
-    margin: 20px 10px 22px 14px !important;
+    margin: 22px 10px 24px 14px !important;
   }  
 }
 
@@ -64,14 +64,14 @@
     height: 71px !important;
     width: 98% !important;
     font-size: 23.5px !important;
-    margin: 20px 13px 22px 9px !important;
+    margin: 21px 13px 23px 9px !important;
   }
 
   #showtoasts {
     height: 71px !important;
     font-size: 28px !important;
     padding: 18px 18px 0px 14px !important;
-    margin: 20px 9px 22px 13px !important;
+    margin: 21px 9px 23px 13px !important;
   }  
 }
 
@@ -125,7 +125,7 @@
   .nohr {
     border: 1.5px solid rgba(73, 192, 208, 0.5);
     width: 97% !important;
-    margin: 5px 0% 20px 3% !important;
+    margin: 10px 0% 20px 3% !important;
     border-radius: 5px !important;
   }
 }
