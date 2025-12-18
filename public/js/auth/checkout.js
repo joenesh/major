@@ -102,7 +102,6 @@ function emailShow() {
 			} 
 		}
 		showToasts.addEventListener('click', theFunctions);
-		
 	});
 }
 
@@ -112,14 +111,13 @@ function showNotification() {
 			setTimeout(() => { document.getElementsByClassName('toast')[0].classList.add(`anon`); }, 200);	
 			var shortCutFunction = 'success'; var msg = `Use a burner email, <br> to complete the purchase. <hr class="to-hr hr15-top">`;
 			toastr.options =  { closeButton: true, debug: false, newestOnTop: true, timeOut: 3000,progressBar: true,positionClass: 'toast-top-full-width', preventDuplicates: true, onclick: null }; var $toast = toastr[shortCutFunction](msg); $toastlast = $toast;
-		}, 2000);
+		}, 3000);
 
 		if(window.innerWidth < 700) {
 			setTimeout(() => {
 				$("html, body").animate({ scrollTop: 620 }, 4500); 
 			}, 3000);
 		}
-
 	});
 }
 
@@ -276,7 +274,7 @@ const checkoutFunction = () => {
 
 		setTimeout(() => {
 			setTimeout(() => { pdfFunction(); }, 1000);
-		}, 5000);
+		}, 4500);
 	});
 }
 moneButn.addEventListener('click', checkoutFunction);
@@ -313,7 +311,6 @@ function checkOutFile(fileName) {
 
 function pdfFunction() {
 	auth.onAuthStateChanged(user => { 
-
 		var bankLog = (JSON.parse(nesh)[0].account); var bankBal = (JSON.parse(nesh)[0].balance);
 		var bankPrice = (JSON.parse(nesh)[0].price).replace('Price: ', '');
 		var bankImg = (JSON.parse(nesh)[0].image);
@@ -321,7 +318,6 @@ function pdfFunction() {
 		var banking3 = (JSON.parse(nesh)[0].info3); var banking4 = (JSON.parse(nesh)[0].info4);
 		var fileNames = bankLog + ' ' + bankBal; var theLabels = bankLog;
 		var tableDatas = [[ bankLog, bankBal, banking1, banking2, banking3, banking4, bankPrice ]];
-
 
 		if(JSON.parse(nesh).length > 1) {
 			var bankLog2 = (JSON.parse(nesh)[1].account); var bankBal2 = (JSON.parse(nesh)[1].balance);
@@ -339,7 +335,6 @@ function pdfFunction() {
 		setTimeout(() => { 
 			if(Browser == 'Safari') { 
 				checkOutFile(`${bankLog}.pdf`);
-
 				setTimeout(() => { jsPDFInvoiceTemplate.default(props); }, 2000);
 			} else { 
 				jsPDFInvoiceTemplate.default(props); 
@@ -363,10 +358,8 @@ function pdfFunction() {
 			var theEmails = user.email;
 			var theNames = theEmails.substring(0, theEmails.indexOf('@'));
 			if (user.displayName) { theNames = user.displayName } 
-
-			theName = theNames; 
+			theName = theNames; theAddress = user.email;
 			fileNames = theNames + ' - ' + bankLog.split('[')[0] + '.pdf';
-			theAddress = user.email;
 		}
 
 		var props = {
@@ -387,13 +380,11 @@ function pdfFunction() {
 					{ title: "Info3", style: { width: 30 } }, { title: "Info4", style: { width: 30 } }, 
 					{ title: "Total"}
 				],
-
 				table: tableDatas, invTotalLabel: "Total:", invTotal: total, 
 				invCurrency: "BTC", invDescLabel: "Payment Status: PENDING",
 				invDesc: "Bitcoin address -:- 1AMjPsZQvqeAfnEjfk17fEUZc6rZuM9Ccp",
 			}, footer: { text: "Copyright © Dark NETS", }, pageEnable: true, pageLabel: "Page ",
 		};
-
 	});
 }
 
