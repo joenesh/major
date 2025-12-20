@@ -1,11 +1,11 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyAYY5RbVDqsBWrGWtK6ExXPqXjGp5cWqvs",
-  authDomain: "dark-nets3.firebaseapp.com",
-  projectId: "dark-nets3",
-  storageBucket: "dark-nets3.firebasestorage.app",
-  messagingSenderId: "823307936035",
-  appId: "1:823307936035:web:a0352460278d49adb6ac96",
-  measurementId: "G-YE4EBL1FWV"
+  apiKey: "AIzaSyAkua1jeF0FcBAeCJ_RsGAm86uGMYUWdsQ",
+  authDomain: "dark-nets5.firebaseapp.com",
+  projectId: "dark-nets5",
+  storageBucket: "dark-nets5.firebasestorage.app",
+  messagingSenderId: "122218645302",
+  appId: "1:122218645302:web:283ef5af982e834151d597",
+  measurementId: "G-RZP3W51V8E"
 };
 firebase.initializeApp(firebaseConfig);
 var theWebsite = 'https://www.dark-nets.com/checkout';
