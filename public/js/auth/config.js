@@ -21,11 +21,11 @@ var firebaseConfig = {
 
 
 var firebaseConfig = {
-  apiKey: "AIzaSyAMuRm8nw4gvefwbmnJ3H9PdkVvapyvUCs",
-  authDomain: "dark-fits.firebaseapp.com",
-  projectId: "dark-fits",
-  storageBucket: "dark-fits.firebasestorage.app",
-  messagingSenderId: "686251028617",
-  appId: "1:686251028617:web:96735af727e55d46c05658",
-  measurementId: "G-WLMB3TDCP9"
+  apiKey: "AIzaSyAkua1jeF0FcBAeCJ_RsGAm86uGMYUWdsQ",
+  authDomain: "dark-nets5.firebaseapp.com",
+  projectId: "dark-nets5",
+  storageBucket: "dark-nets5.firebasestorage.app",
+  messagingSenderId: "122218645302",
+  appId: "1:122218645302:web:283ef5af982e834151d597",
+  measurementId: "G-RZP3W51V8E"
 };
