@@ -2158,7 +2158,7 @@ td {
 
 @media screen and (max-width: 767px) {
   .vpn-section .butn#vpn {
-    margin: 70px auto 140px !important;
+    margin: 70px auto 150px !important;
 
     padding: 20px 16px !important;
     font-size: 31.5px !important;
@@ -2168,7 +2168,7 @@ td {
 
 @media screen and (max-width: 420px) {
   .vpn-section .butn#vpn {
-    margin: 65px auto 130px !important;
+    margin: 65px auto 140px !important;
 
     padding: 19px 15.5px !important;
     font-size: 31px !important;
@@ -2178,7 +2178,7 @@ td {
 
 @media screen and (max-width: 407px) {
   .vpn-section .butn#vpn {
-    margin: 60px auto 120px !important;
+    margin: 60px auto 130px !important;
 
     padding: 18.5px 15px !important;
     font-size: 30px !important;
